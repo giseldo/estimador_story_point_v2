@@ -29,8 +29,10 @@ import { AIFallbackNotice } from "@/components/ai-fallback-notice"
 
 export function TaskEstimator() {
   const [tasks, setTasks] = useState<Task[]>([])
-  const [title, setTitle] = useState("")
-  const [description, setDescription] = useState("")
+  const [title, setTitle] = useState("Implementar autenticação de usuários")
+  const [description, setDescription] = useState(
+    "Como usuário, desejo fazer login com email e senha para acessar o sistema."
+  )
   const [taskType, setTaskType] = useState("feature")
   const [estimatedPoints, setEstimatedPoints] = useState<number | null>(null)
   const [mlEstimatedPoints, setMlEstimatedPoints] = useState<number | null>(null)
